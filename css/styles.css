@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Moderustic", sans-serif; 
+    z-index: 1;
+}
+
+.navbar{
+    background-color: #ffacbd;
+}
+
+.hero{
+    width:100% ;
+    height: 550px;
+    text-align: center;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+.secundario{
+    text-align: center;
+    margin: 20px;
+}
+.secundario h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+}
+.titulo-pagina{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    gap: 20px;
+}
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 3;
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+
+/*!--- PAGINA HISTORIAS DE EXITO ---*/
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width:300px ;
+    height: 550px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0,4);  
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 400px;
+}
+.card-text{
+    padding: 15px;
+    text-align: center;
+} 
+.card-text p{
+    line-height: 1.5;
+    color: black;
+}
+.card-text h3{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+/*!--- PAGINA ANIMALES ---*/
+.terciario{
+    text-align: center;
+}
+.animales{
+    text-align: center;
+    font-size: 40px;
+}
+.terciario div{
+    width:300px ;
+    height: 600px;
+    background-color: white;
+    border: 2px solid;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+}
+.terciario div img{
+    width: 300px;
+    border-radius: 15px 15px 0 0;
+}
+.terciario div h3{
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+.terciario div a{
+    border-radius: 60px;
+    background-color: #80e4a0;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    margin: 200% 0% 0% 0%;
+}
+.texto-terciario{
+    padding: 5px;
+    padding-top: 5px;
+}
+/*!--- MAPA ---*/
+.mapa{
+    text-align: center;
+}
+/*!--- FOOTER ---*/
+.contacto1{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    display: inline-block;
+    bottom: 50px;
+    right: 50px;
+}
+.contacto2{
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+        display: inline-block;
+        bottom: 50px;
+        right: 50px;
+}
+.contacto3{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    display: inline-block;
+    bottom: 50px;
+    right: 50px;
+}
+.contacto4{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    display: inline-block;
+    bottom: 50px;
+    right: 50px;
+}  
+
+@media screen and (max-width:1024px) { /* vista en tablet*/
+    .conatiner-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }  
+
+}
+@media screen and (max-width:768px){ /*vista en celular*/
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .conatiner-img .box-img img{
+        height: 200px;
+    }
+    .card-container{
+        flex-wrap: wrap;
+    }
+}
