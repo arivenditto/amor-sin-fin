@@ -1,0 +1,224 @@
+/*! INDEX */
+.hero {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: nth($colores , 2);
+}
+
+.secundario {
+    text-align: $center;
+    margin: 20px;
+
+    h2 {
+        text-align: $center;
+        font-size: 40px;
+        margin: 10px;
+        color: white;
+    }
+}
+
+.container-img {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    gap: 20px;
+
+    .box-img {
+
+        figure,
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        &:nth-child(1) {
+            grid-column-start: span 3;
+        }
+
+        &:nth-child(4) {
+            grid-row-start: span 2;
+        }
+    }
+}
+
+.boton-1 {
+    display: inline-block;
+    align-items: center;
+    padding: 11px 35px;
+    background-color: $color-boton;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $color-boton-hover;
+    }
+}
+
+
+/*! ANIMALES */
+.terciario {
+    div {
+        width: 300px;
+        height: 600px;
+        background-color: white;
+        border: 2px solid;
+        margin: 10px;
+        text-align: center;
+        border-radius: 15px;
+        display: inline-block;
+    }
+
+    img {
+        width: 300px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        line-height: 1.7em;
+    }
+
+    a {
+        border-radius: map-get($boton , borde-boton);
+        background-color: map-get($boton , bg-color);
+        color: map-get($boton, color-boton);
+        padding: map-get($boton, padding-boton);
+        margin: map-get($boton, margen-boton);
+        @extend %enlaces;
+    }
+}
+
+.texto-terciario {
+    padding: 5px;
+    padding-top: 5px;
+}
+
+.contacto-3 {
+    background-color: #BDE8CA;
+}
+
+/*! HISTORIAS DE EXITO */
+.card-container {
+    width: 100%;
+    @include flex(flex, wrap)
+}
+
+.card {
+    width: 300px;
+    height: 550px;
+    background-color: nth($colores, 2);
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0px 1px 10px (#fffafa00, #fffafa00, #fffafa00, #fffafa00, #a8a1a1);
+    cursor: default;
+    transition: all 400ms ease;
+
+    &:hover {
+        box-shadow: 5px 5px 20px (#fffafa00, fffafa00, fffafa00, fffafa00, #918e8e);
+        transform: translateY(-3%);
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .card-text {
+        padding: 15px;
+        text-align: center;
+
+        h3 {
+            font-weight: 300;
+            margin-bottom: 15px;
+
+        }
+    }
+
+}
+
+.contacto-4 {
+    background-color: #EECAD5;
+}
+
+/*!--- PAGINA CUIDADO DE MASCOTAS ---*/
+
+.inicio-cuidados {
+    padding: $padding-inicio 0;
+    background-color: $background-color-inicio;
+    position: relative;
+}
+
+.hero2 {
+    width: 100%;
+    height: $height-hero;
+    text-align: center;
+    background-image: $background-image-hero;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.cuidado-mascotas {
+    text-align: center;
+
+    h2 {
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+        text-transform: uppercase;
+        padding: $padding-h2;
+        margin-bottom: $margin-bottom-h2;
+    }
+
+    .txt {
+        font-size: $font-size-txt;
+        color: $color-txt;
+        padding: $padding-txt;
+        margin-bottom: $margin-bottom-txt;
+    }
+}
+
+.cuidados.mascotas {
+    .cuidados {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $margin-bottom-cuidados;
+    }
+
+    .items {
+        img {
+            width: $width-img-items;
+        }
+    }
+
+    .img-cuidados {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.contacto-2 {
+    background-color: $background-color-inicio;
+}

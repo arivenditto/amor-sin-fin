@@ -1,0 +1,39 @@
+$colores: #ffacbd, white, black, #80e4a0;
+$center: center;
+$boton:(
+    bg-color: #80e4a0,
+    borde-boton: 60px,
+    color-boton: white,
+    padding-boton: 4px,
+    margen-boton: 200% 0% 0% 0%,
+);
+$ancho-maximo: 1100px;
+$margen-vertical: 60px;
+$grid-columns: 3;
+$grid-rows: 200px;
+$gap: 20px;
+$color-boton: #CE9678;
+$color-boton-hover: #ebad8d;
+$padding-inicio: 100px;
+$background-color-inicio: #E1E2E6;
+$height-hero: 550px;
+$background-image-hero: url(../img/inicio-cuidados.jpg);
+$font-size-h2: 40px;
+$line-height-h2: 70px;
+$padding-h2: 0 250px;
+$margin-bottom-h2: 15px;
+$font-size-txt: 16px;
+$color-txt: #414247;
+$padding-txt: 0 250px;
+$margin-bottom-txt: 150px;
+$margin-bottom-cuidados: 50px;
+$width-img-items: 50px;
+
+%enlaces{
+    text-decoration: none;
+}
+@mixin flex($flex, $flex-wrap){
+    display: $flex;
+    flex-wrap: $flex-wrap;
+}
+
