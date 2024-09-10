@@ -228,24 +228,69 @@ body{
 }
 
 /*!--- FOOTER ---*/
+
 footer{
-    background-color: #CA8787;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #CA8787;
+    height: 200px;
+    padding: 20px 50px;
+    flex-direction: column;
 }
-.mapa{
-    text-align: center;
-    width: 20px;
-    height: 20px;
+footer .iconos,
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
 }
-.contacto-1{
-    width: 60px;
-    height: 60px;
-    margin-left: 15px;
+footer .iconos li,
+footer .menu li{
+    list-style: none;
+}
+footer .iconos li a{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
     display: inline-block;
-    bottom: 50px;
-    right: 50px;
+    transition: 0.5s;
 }
-
-
+footer .iconos li a:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a{
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    opacity: 0.75;
+}
+footer .ondas{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: ;
+}
 @media screen and (max-width:1024px) { /* vista en tablet*/
     .conatiner-img{
         width: 95%;
