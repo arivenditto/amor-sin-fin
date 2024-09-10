@@ -2,12 +2,9 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
 }
 body{
-    background-image: url(../img/fondo.png);
+    background-color:  #D9ABAB;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,7 +13,7 @@ body{
 }
 
 .navbar{
-    background-color: #ffacbd;
+    background-color: #D9ABAB;
 }
 
 .hero{
@@ -81,6 +78,7 @@ body{
     display: inline-block;
     align-items: center;
     padding: 11px 35px;
+    margin: 0 650px;
     background-color: #CE9678 ;
     color: white;
     text-decoration: none;
@@ -174,8 +172,6 @@ body{
 .contacto-3{
     background-color: #BDE8CA;
 }
-/*!--- PAGINA DONACIONES ---*/
-
 /*!--- PAGINA CUIDADO DE MASCOTAS ---*/
 .inicio-cuidados{
     padding: 100px 0;
@@ -215,6 +211,10 @@ body{
     margin-bottom: 50px;
 
 }
+.items{
+    display: flex;
+    justify-content: space-between;
+}
 .items img{
     width: 50px;
 }
@@ -226,11 +226,16 @@ body{
 .contacto-2{
     background-color: #E1E2E6;
 }
-/*!--- MAPA ---*/
+
+/*!--- FOOTER ---*/
+footer{
+    background-color: #CA8787;
+}
 .mapa{
     text-align: center;
+    width: 20px;
+    height: 20px;
 }
-/*!--- FOOTER ---*/
 .contacto-1{
     width: 60px;
     height: 60px;
