@@ -71,7 +71,6 @@
     }
 }
 
-
 /*! ANIMALES */
 .terciario {
     div {
@@ -115,111 +114,56 @@
 }
 
 /*! HISTORIAS DE EXITO */
-.card-container {
-    width: 100%;
-    @include flex(flex, wrap)
-}
 
-.card {
-    width: 300px;
-    height: 550px;
-    background-color: nth($colores, 2);
-    margin: 5px;
-    text-align: center;
-    border-radius: 15px;
-    overflow: hidden;
-    display: inline-block;
-    box-shadow: 0px 1px 10px (#fffafa00, #fffafa00, #fffafa00, #fffafa00, #a8a1a1);
-    cursor: default;
-    transition: all 400ms ease;
-
-    &:hover {
-        box-shadow: 5px 5px 20px (#fffafa00, fffafa00, fffafa00, fffafa00, #918e8e);
-        transform: translateY(-3%);
-    }
-
-    img {
-        width: 100%;
-        height: 400px;
-
-    }
-
-    .card-text {
-        padding: 15px;
-        text-align: center;
-
-        h3 {
-            font-weight: 300;
-            margin-bottom: 15px;
-
-        }
-    }
-
-}
 
 .contacto-4 {
     background-color: #EECAD5;
 }
 
 /*!--- PAGINA CUIDADO DE MASCOTAS ---*/
-
-.inicio-cuidados {
-    padding: $padding-inicio 0;
-    background-color: $background-color-inicio;
-    position: relative;
+contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.hero2 {
-    width: 100%;
-    height: $height-hero;
-    text-align: center;
-    background-image: $background-image-hero;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-}
+.tarjeta {
+    width: 349px;
+    height: 250px;
+    margin: 20px;
+    perspective: 1000px;
 
-.cuidado-mascotas {
-    text-align: center;
-
-    h2 {
-        font-size: $font-size-h2;
-        line-height: $line-height-h2;
-        text-transform: uppercase;
-        padding: $padding-h2;
-        margin-bottom: $margin-bottom-h2;
+    &-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
     }
 
-    .txt {
-        font-size: $font-size-txt;
-        color: $color-txt;
-        padding: $padding-txt;
-        margin-bottom: $margin-bottom-txt;
-    }
-}
-
-.cuidados.mascotas {
-    .cuidados {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: $margin-bottom-cuidados;
+    &-front,
+    &-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
     }
 
-    .items {
-        img {
-            width: $width-img-items;
+    &-front {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-back {
+        transform: rotateY(180deg);
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    &:hover {
+        .tarjeta-inner {
+            transform: rotateY(180deg);
         }
     }
-
-    .img-cuidados {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
-
-.contacto-2 {
-    background-color: $background-color-inicio;
 }

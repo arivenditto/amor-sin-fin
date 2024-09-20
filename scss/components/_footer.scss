@@ -1,10 +1,36 @@
-div{
-    img{
-        width: 60px;
-        height: 60px;
-        margin-left: 15px;
-        display: inline-block;
-        bottom: 50px;
-        right: 50px;
+.iconos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li {
+        margin-right: 20px;
+
+        a {
+            color: #000;
+            text-decoration: none;
+
+            i {
+                font-size: 24px;
+            }
+        }
     }
-}    
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        margin-right: 20px;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
+p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
