@@ -38,6 +38,7 @@ body {
     color: #F7EFE5;
     text-transform: uppercase;
     font-weight: 600;
+    padding: 15px;
 }
 
 .secundario {
@@ -156,7 +157,7 @@ body {
 /*!--- PAGINA ANIMALES ---*/
 .terciario {
     text-align: center;
-    background-color: #A1D6B2;
+    background-color: #D7C3F1;
 }
 
 .card-container {
@@ -226,6 +227,10 @@ body {
 }
 
 /*!--- PAGINA CUIDADO DE MASCOTAS ---*/
+.cuidado-mascotas{
+    padding: 0 0 40px 0;
+    background-color: #D7C3F1; 
+}
 
 .contenedor-tarjetas {
     display: flex;
@@ -271,6 +276,16 @@ body {
 
 .tarjeta:hover .tarjeta-inner {
     transform: rotateY(180deg);
+}
+/*!--- PAGINA ADOPCIONES ---*/
+.adopciones{
+    padding: 0 0 40px 0;
+    background-color: #D7C3F1;
+}
+/*!--- PAGINA DONACIONES ---*/
+.donaciones{
+    padding: 0 0 40px 0;
+    background-color: #D7C3F1;
 }
 
 /*!--- FOOTER ---*/

@@ -190,6 +190,10 @@
 }
 
 /*!--- PAGINA CUIDADO DE MASCOTAS ---*/
+.cuidado-mascotas{
+    padding: 0 0 40px 0;
+    background-color: #D7C3F1; 
+}
 .contenedor-tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -237,3 +241,14 @@
         }
     }
 }
+/*!--- PAGINA ADOPCIONES ---*/
+.adopciones{
+    padding: 0 0 40px 0;
+    background-color: #D7C3F1;
+}
+/*!--- PAGINA DONACIONES ---*/
+.donaciones{
+    padding: 0 0 40px 0;
+    background-color: #D7C3F1;
+}
+
