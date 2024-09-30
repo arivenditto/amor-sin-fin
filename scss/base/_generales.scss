@@ -3,27 +3,22 @@
     padding: 0px;
 }
 body{
-    background-image: url(../img/fondo.png);
+    background-color: #D9ABAB;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: "Moderustic", sans-serif; 
+    font-family: "Moderustic", sans-serif;
     z-index: 1;
 }
 .titulo-pagina{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
     text-align: center;
     font-size: 40px;
-    color: #1E201E;
+    color: #F7EFE5;
     text-transform: uppercase;
+    font-weight: 600;
 }
 .navbar{
     background-color: nth($colores, 1 );
-}
-.contacto1{
-    width: 60px;
-    height: 60px;
-    margin-left: 15px;
-    display: inline-block;
-    bottom: 50px;
-    right: 50px;
 }

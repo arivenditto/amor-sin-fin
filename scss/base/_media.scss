@@ -19,9 +19,8 @@
     .titulo-pagina{
         text-align: center;
         font-size: 25px;
-        color: black;
-        text-transform: uppercase;
-        font-family: "Space Grotesk", sans-serif;
+        color: #F7EFE5;
+        font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
@@ -36,8 +35,15 @@
         flex-direction: column;
         margin-bottom: 0;
     }
-    img-cuidados{
+    .img-cuidados{
         display: none;
+    }
+    .hero {
+        background-image: url(../img/banner-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
 }
@@ -63,9 +69,9 @@
     .titulo-pagina{
         text-align: center;
         font-size: 25px;
-        color: black;
+        color: #F7EFE5;
         text-transform: uppercase;
-        font-family: "Space Grotesk", sans-serif;
+        font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
@@ -80,9 +86,45 @@
         flex-direction: column;
         margin-bottom: 0;
     }
-    img-cuidados{
+    .img-cuidados{
         display: none;
     }
+    .hero {
+        background-image: url(../img/banner-telefono.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
 
+    footer .iconos,
+    footer .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+        flex-wrap: wrap;
+    }
+    footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #CA8787;
+        height: 270px;
+        padding: 10px 50px;
+        flex-direction: column;
+    }
+    footer .menu li a {
+        font-size: 1.1em;
+        color: white;
+        margin: 0px 10px;
+        display: inline;
+        text-decoration: none;
+        opacity: 0.75;
+        transition: 0.5s;
+    }
 }
 

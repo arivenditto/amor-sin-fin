@@ -8,7 +8,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: nth($colores , 2);
 }
 
 .secundario {
@@ -75,7 +74,7 @@
 .terciario,
 .contacto-3 {
     text-align: center;
-    background-color: #BDE8CA;
+    background-color: #A1D6B2;
 }
 
 .card-container {
@@ -142,7 +141,7 @@
 
 /*! HISTORIAS DE EXITO */
 .historias-de-exito {
-    background-color: #EECAD5;
+    background-color: #D7C3F1;
 }
 
 .container-tarjetas {
@@ -191,7 +190,7 @@
 }
 
 /*!--- PAGINA CUIDADO DE MASCOTAS ---*/
-contenedor-tarjetas {
+.contenedor-tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -228,6 +227,7 @@ contenedor-tarjetas {
     &-back {
         transform: rotateY(180deg);
         background-color: #fff;
+        font-size: 23px;
         padding: 20px;
     }
 
