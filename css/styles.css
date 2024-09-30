@@ -466,15 +466,16 @@ footer p {
         width: 100%;
         background: #CA8787;
         height: 270px;
-        padding: 20px 50px;
+        padding: 10px 50px;
         flex-direction: column;
     }
     footer .menu li a {
         font-size: 1.1em;
         color: white;
-        margin: 0 10px;
+        margin: 0px 10px;
         display: inline;
         text-decoration: none;
+        padding: 70px 90px;
         opacity: 0.75;
         transition: 0.5s;
     }
