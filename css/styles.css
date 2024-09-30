@@ -508,4 +508,7 @@ footer p {
         opacity: 0.75;
         transition: 0.5s;
     }
+    .adopciones{
+        padding: 0 0 100px 0;
+    }
 }
